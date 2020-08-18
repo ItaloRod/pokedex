@@ -1,30 +1,31 @@
 import styled from 'styled-components/native'
 
+interface Title {
+  align?: string
+}
+
 const GridView = styled.View`
   display: flex;
   flex-direction: row;
 `
 const ContainerView = styled.View`
   display: flex;
-  align-items: center;
+  margin: 0 28px;
 `
-const Title = styled.Text`
+const Title = styled.Text<Title>`
   color: #303943;
   font-weight: bold;
-  text-align: center;
+  text-align: ${props => props.align || 'left'};
   font-size: 30px;
-  margin-top: 100px;
 `
-const ColorView = styled.View`
+interface TitleView {
+  home?: boolean
+}
+
+const TitleView = styled.View<TitleView> `
+  margin-top:${props => props.home? '100px' : '34px'};
   display: flex;
-  margin: 5px;
-  flex-direction: row;
-  align-items: center;
-  box-shadow: 0 14px 28px ${props => props.backgroundColor};
-  background: ${props => props.backgroundColor || '#ffffff'};
-  border-radius: 15px;
-  min-width: 155px;
-  min-height: 60px;
+  width: 100%;
 `
 
 const ColorText = styled.Text`
@@ -34,4 +35,4 @@ const ColorText = styled.Text`
   font-weight: bold;
   color: #ffffff;
 `
-export { ContainerView, Title, ColorView, ColorText, GridView }
+export { ContainerView, Title, ColorText, GridView, TitleView }
