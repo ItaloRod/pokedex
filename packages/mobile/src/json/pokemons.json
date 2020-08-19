@@ -1,0 +1,90 @@
+[
+  {
+    "id": "001",
+    "name": "bulbasaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "color": "#46D7AB",
+    "imageURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+  },
+  {
+    "id": "002",
+    "name": "Ivysaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "color": "#46D7AB",
+    "imageURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
+  },
+  {
+    "id": "003",
+    "name": "Venusaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "color": "#46D7AB",
+    "imageURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+
+  },
+  {
+    "id": "004",
+    "name": "charmander",
+    "types": [
+      "fire"
+    ],
+    "color": "#FB6C6C",
+    "imageURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+
+  },
+  {
+    "id": "005",
+    "name": "Charmeleon",
+    "types": [
+      "fire"
+    ],
+    "color": "#FB6C6C",
+    "imageURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
+  },
+  {
+    "id": "006",
+    "name": "Charizard",
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "color": "#FB6C6C",
+    "imageURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
+
+  },
+  {
+    "id": "007",
+    "name": "Squirtle",
+    "types": [
+      "water"
+    ],
+    "color": "#46C5D7",
+    "imageURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+  },
+  {
+    "id": "008",
+    "name": "wartotle",
+    "types": [
+      "water"
+    ],
+    "color": "#46C5D7",
+    "imageURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
+  },
+  {
+    "id": "009",
+    "name": "Blastoise",
+    "types": [
+      "water"
+    ],
+    "color": "#46C5D7",
+    "imageURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
+  }
+]

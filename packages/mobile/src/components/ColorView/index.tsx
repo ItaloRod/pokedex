@@ -3,11 +3,11 @@ import { TouchableOpacity } from 'react-native-gesture-handler'
 import { ContainedView } from './style'
 
 function ColorView(props: any): JSX.Element {
-  const {children , backgroundColor, onPress} = props
+  const {children , backgroundColor, onPress, pokemon} = props
 
   return (
     <TouchableOpacity onPress={onPress}>
-      <ContainedView color={backgroundColor}>
+      <ContainedView pokemon={pokemon} color={backgroundColor}>
         { children }
       </ContainedView>
     </TouchableOpacity>

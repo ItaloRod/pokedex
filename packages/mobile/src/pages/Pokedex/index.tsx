@@ -1,7 +1,8 @@
 import React, { useLayoutEffect } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { Title, ContainerView, TitleView } from '../../styles/global'
+import { Title, ContainerView, TitleView, GridView } from '../../styles/global'
 import { ScrollView } from 'react-native-gesture-handler'
+import ListPokemon from './ListPokemon'
 
 function Pokedex<React, FC>(): JSX.Element {
   return (
@@ -11,6 +12,7 @@ function Pokedex<React, FC>(): JSX.Element {
           <TitleView>
             <Title align="left">Pokedex</Title>
           </TitleView>
+            <ListPokemon />
         </ContainerView>
       </ScrollView>
     </SafeAreaView>

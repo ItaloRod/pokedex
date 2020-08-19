@@ -10,20 +10,23 @@ const GridView = styled.View`
 `
 const ContainerView = styled.View`
   display: flex;
-  margin: 0 28px;
+  align-items: center;
+  width: 100%;
 `
 const Title = styled.Text<Title>`
   color: #303943;
   font-weight: bold;
   text-align: ${props => props.align || 'left'};
   font-size: 30px;
+  margin: 0 28px;
 `
 interface TitleView {
   home?: boolean
 }
 
 const TitleView = styled.View<TitleView> `
-  margin-top:${props => props.home? '100px' : '34px'};
+  margin-top:${props => props.home? '100px' : '10px'};
+  margin-bottom: ${props => props.home? '0' : '25px'};
   display: flex;
   width: 100%;
 `

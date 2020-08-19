@@ -15,8 +15,8 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import Routes from './routes/index.routes';
 import theme from './theme';
-
 const App = () => {
+
   return (
     <>
       <StatusBar backgroundColor="transparent" barStyle="dark-content" />
