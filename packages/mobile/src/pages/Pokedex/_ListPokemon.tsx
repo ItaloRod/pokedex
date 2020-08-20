@@ -16,6 +16,7 @@ function ListPokemon () {
 
   const PokemonCard = ({id, color, name, types, imageURL}: Pokemon): JSX.Element => (
     <ColorView pokemon="true" backgroundColor={color}>
+
       <PokemonContainer>
         <PokemonNumber>
           #{id}

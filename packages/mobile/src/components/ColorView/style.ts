@@ -12,7 +12,7 @@ const ContainedView = styled.View<ContainerView>`
   background: ${props => props.color || '#ffffff'};
   border-radius: 15px;
   min-width: 155px;
-  min-height: ${props => props.pokemon ? '140px' : '80px' };
+  min-height: ${props => props.pokemon ? '140px' : '60px' };
   ${props => !props.pokemon && `
     align-items: center;
   `}

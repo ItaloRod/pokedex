@@ -2,8 +2,6 @@ import React from 'react'
 import { createStackNavigator, HeaderBackButton } from '@react-navigation/stack'
 import Home from '../pages/Home'
 import Pokedex from '../pages/Pokedex'
-import Icon from 'react-native-vector-icons/MaterialIcons'
-import { TouchableOpacity } from 'react-native-gesture-handler'
 import { BackButton, MenuButton } from '../components/HeaderButtons'
 
 function Routes<React,FC>(): JSX.Element {

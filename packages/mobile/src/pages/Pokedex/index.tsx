@@ -2,7 +2,7 @@ import React, { useLayoutEffect } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { Title, ContainerView, TitleView, GridView } from '../../styles/global'
 import { ScrollView } from 'react-native-gesture-handler'
-import ListPokemon from './ListPokemon'
+import ListPokemon from './_ListPokemon'
 
 function Pokedex<React, FC>(): JSX.Element {
   return (
