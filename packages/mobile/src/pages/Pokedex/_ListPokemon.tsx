@@ -1,8 +1,9 @@
 import React from 'react'
 import ColorView from '../../components/ColorView'
-import { PokemonTitle, PokemonNumber, PokemonContainer, Badge, Row, Column } from './style'
+import { PokemonTitle, PokemonNumber, PokemonContainer, Badge, Row, Column, PokedexContainer } from './style'
 import Pokemons from '../../json/pokemons.json'
 import { View, Image } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 
 type Pokemon = {
   id: string
@@ -12,11 +13,12 @@ type Pokemon = {
   imageURL: string
 }
 
-function ListPokemon () {
+function ListPokemon<React,FC> (): JSX.Element {
+
+  const navigation = useNavigation()
 
   const PokemonCard = ({id, color, name, types, imageURL}: Pokemon): JSX.Element => (
-    <ColorView pokemon="true" backgroundColor={color}>
-
+    <ColorView pokemon="true" backgroundColor={color} onPress={() => navigation.navigate('Pokemon')}>
       <PokemonContainer>
         <PokemonNumber>
           #{id}
@@ -31,7 +33,7 @@ function ListPokemon () {
             }
           </Column>
           <Column>
-            <Image style={{ width: 90, height: 90 }} source={{ uri: imageURL }}/>
+            <Image style={{ width: 80, height: 80 }} source={{ uri: imageURL }}/>
           </Column>
         </Row>
       </PokemonContainer>
@@ -40,11 +42,11 @@ function ListPokemon () {
 
   return (
     <>
-    <View style={{ justifyContent: 'center', flexDirection: 'row', flexWrap: 'wrap'}}>
+    <PokedexContainer>
     {
       Pokemons.map((pokemon:Pokemon) => <PokemonCard key={pokemon.id} {...pokemon} />)
     }
-    </View>
+    </PokedexContainer>
     </>
   )
 }

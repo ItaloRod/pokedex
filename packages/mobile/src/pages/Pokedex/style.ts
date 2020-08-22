@@ -7,6 +7,7 @@ const PokemonContainer = styled.View`
   flex-grow: 1;
   margin: 16px;
 `
+
 const PokemonTitle = styled.Text`
   color: #ffffff;
   font-size: 14px;
@@ -22,6 +23,12 @@ const PokemonNumber = styled.Text`
   align-self: flex-end;
   color: rgba(0,0,0,0.12);
 
+`
+
+const PokedexContainer = styled.View`
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 `
 
 const Row = styled.View`
@@ -46,4 +53,4 @@ const Badge = styled.Text `
   text-align: center;
   color: #FFFFFF;
 `
-export { PokemonTitle, PokemonNumber, PokemonContainer, Badge, Row, Column }
+export { PokemonTitle, PokemonNumber, PokemonContainer, Badge, Row, Column, PokedexContainer }

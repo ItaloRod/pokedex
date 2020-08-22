@@ -2,6 +2,7 @@ import styled from 'styled-components/native'
 
 interface Title {
   align?: string
+  color: string
 }
 
 const GridView = styled.View`
@@ -14,7 +15,7 @@ const ContainerView = styled.View`
   width: 100%;
 `
 const Title = styled.Text<Title>`
-  color: #303943;
+  color: ${props => props.color};
   font-weight: bold;
   text-align: ${props => props.align || 'left'};
   font-size: 30px;

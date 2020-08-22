@@ -5,21 +5,21 @@ import { useNavigation } from '@react-navigation/native'
 
 
 
-function BackButton<React,FC>(): JSX.Element {
+function BackButton<React,FC>(props:any): JSX.Element {
   const navigation = useNavigation()
   return (
     <HeaderButton onPress={() => navigation.goBack()}>
-      <Icon name="arrow-back" color="#303943" size={28}/>
+      <Icon name="arrow-back" color={props.color} size={28}/>
     </HeaderButton>
   )
 }
 
 
-function MenuButton<React, FC>(): JSX.Element {
+function MenuButton<React, FC>(props:any): JSX.Element {
   const navigation = useNavigation()
   return (
     <HeaderButton onPress={() => navigation.goBack()}>
-      <Icon name="menu" color="#303943" size={28}/>
+      <Icon name="menu" color={props.color} size={28}/>
     </HeaderButton>
   )
 }

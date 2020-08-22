@@ -14,7 +14,7 @@ function Home<React, FC>(): JSX.Element {
       <ScrollView>
         <ContainerView>
           <TitleView home>
-            <Title align="center">Qual Pokémon você está procurando?</Title>
+            <Title color="#303943" align="center">Qual Pokémon você está procurando?</Title>
           </TitleView>
           <Search />
           <Menu />

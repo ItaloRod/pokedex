@@ -10,7 +10,7 @@ function Pokedex<React, FC>(): JSX.Element {
       <ScrollView>
         <ContainerView>
           <TitleView>
-            <Title align="left">Pokedex</Title>
+            <Title color="#303943" align="left">Pokedex</Title>
           </TitleView>
             <ListPokemon />
         </ContainerView>
